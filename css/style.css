@@ -15,6 +15,7 @@
 body {
     font-family: 'Montserrat', 'Tahoma', sans-serif;
     color: rgb(32, 32, 32);
+    overflow-y:hidden;
 }
 
 ul {
@@ -97,6 +98,8 @@ a{
     margin: auto;
     padding-top: 6rem;
     color: rgba(236, 236, 236, 0.76);
+    transition: all 0.6s ease-in;
+    text-shadow: 2px 2px 1px rgb(192, 192, 192);
 }
 
 .main #front {
@@ -127,8 +130,12 @@ a{
 
 .main .social img {
     height: 60px;
+    opacity: 0.8;
 }
 
+.main .social img:hover {
+    opacity: 1;
+}
 
 /* section direction */
 .direction .container {
@@ -137,27 +144,114 @@ a{
 }
 .direction h3 {
     margin: auto;
-    padding-top: 5rem;
+    padding-top: 20%;
     color: var(--text-color);
     font-size: 1.6rem;
-    opacity: 0.5;
-}
-
-.direction h3:hover {
-    opacity: 1;
-    -webkit-transition: all 0.4s ease-out;
+    opacity: 0.7;
 }
 
 .direction .expand {
     margin: auto;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .direction .expand:hover {
     opacity: 1;
+    -webkit-transform: rotate(180deg);
     -webkit-transition: all 0.4s ease-out;
 }
 
 .direction img {
     height: 90px;
+}
+
+
+/*  */
+/* portfolio and about */
+/*  */
+.content .container {
+    text-align: center;
+}
+
+.content .heading {
+    margin: auto;
+    font-size: 7rem;
+    padding-top: 3rem;
+    color: rgba(255, 255, 255, 0.63);
+    text-shadow: 1px 2px 1px rgb(192, 192, 192);
+}
+
+.direction #about {
+    padding-top: 2rem;
+}
+
+
+
+/*  */
+/* portfolio swiper */
+/*  */
+.container .carousel {
+    margin: auto;
+    padding-top: 5rem;
+}
+.swiper-container {
+    width: 80%;
+    padding-bottom: 3rem;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 25rem;
+    height: 25rem;
+    background-color: #fff;
+    position: relative;
+}
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* keyframes */
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.m-scene .scene_element {
+animation-duration: 0.5s;
+transition-timing-function: ease-in;
+animation-fill-mode: both;
+}
+.m-scene .scene_element--fadeup {
+animation-name: fadeUp;
+}
+.m-scene .scene_element--fadedown {
+animation-name: fadeDown;
+}
+
+.m-scene.is-exiting .scene-element {
+    animation-direction: alternate-reverse;
 }

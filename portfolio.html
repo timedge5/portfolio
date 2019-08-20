@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css" type=text/css />
+    <title>tim|edge</title>
+</head>
+<body>
+    <div class="landing m-scene" id='portfolioPage'>
+        <!-- nav -->
+        <nav class="navbar scene_element scene_element--fadeup">
+            <div class="container">
+                <div class="brand">tim|edge</div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="content scene_element scene_element--fadeup">
+            <div class="container">
+                <h1 class='heading'>PORTFOLIO</h1>
+                <div class="carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content">
+                                    <h1>code</h1>
+                                    <a href="#" class="swiper-btn">visit site</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-content">
+                                    <h1>code</h1>
+                                    <a href="#" class="swiper-btn">visit site</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-content">
+                                    <h1>code</h1>
+                                    <a href="#" class="swiper-btn">visit site</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-content">
+                                    <h1>code</h1>
+                                    <a href="#" class="swiper-btn">visit site</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-content">
+                                    <h1>code</h1>
+                                    <a href="#" class="swiper-btn">visit site</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-content">
+                                    <h1>code</h1>
+                                    <a href="#" class="swiper-btn">visit site</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="direction scene_element scene_element--fadeup">
+            <div class="container">
+                <h3 id='about' class='tags'>ABOUT</h3>
+                <a href="about.html" class="expand"><img src="img/expand.png" alt="Expand arrow"></a>
+            </div>
+        </section>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            keyboard: {
+                enabled: true,
+            },
+        });
+    </script>
+    <script src='js/jquery-3.4.1.min.js'></script>
+    <script src='js/jquery.smoothState.min.js'></script>
+    <script src='js/pageTransition.js'></script>
+</body>
+</html>

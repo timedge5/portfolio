@@ -8,21 +8,21 @@
     <title>tim|edge</title>
 </head>
 <body>
-    <div class="landing">
+    <div class="landing m-scene" id='homePage'>
         <!-- nav -->
-        <nav class="navbar">
+        <nav class="navbar scene_element scene_element--fadedown">
             <div class="container">
                 <div class="brand">tim|edge</div>
                 <ul class="nav">
-                    <li class="nav-item"><a href="" class="nav-link">portfolio</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">about</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">portfolio</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
                 </ul>
             </div>
         </nav>
 
         <!-- main -->
-        <section class="main">
+        <section class="main scene_element scene_element--fadeup">
             <div class="container">
                 <h1 id="intro">tim|edge</h1>
                 <h3 id='front'>FrontEndDev</h3>
@@ -37,13 +37,16 @@
             </div>
         </section>
 
-        <section class="direction">
+        <section class="direction scene_element scene_element--fadeup">
             <div class="container">
-                <h3>PORTFOLIO</h3>
-                <a href="#" class="expand"><img src="img/expand.png" alt="Expand arrow"></a>
+                <h3 class='tags'>PORTFOLIO</h3>
+                <a href="portfolio.html" class="expand"><img src="img/expand.png" alt="Expand arrow"></a>
             </div>
         </section>
     </div>
     
+    <script src='js/jquery-3.4.1.min.js'></script>
+    <script src='js/jquery.smoothState.min.js'></script>
+    <script src='js/pageTransition.js'></script>
 </body>
 </html>
