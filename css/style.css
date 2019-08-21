@@ -66,14 +66,14 @@ a{
 }
 
 .navbar .nav .nav-link:hover {
-    color: #fff;
+    color: rgb(187, 187, 187);
     -webkit-transition: all 0.4s ease-out;
 }
 /* landing */
 .landing {
     min-height: 100vh;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #6d737e 100%);
-    /* background-color: rgba(211, 211, 211, 0.514); */
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #6d737e 100%); */
+    background-color: rgba(211, 211, 211, 0.514);
     opacity: 0.8;   
     
 }
@@ -95,10 +95,10 @@ a{
     font-size: 12rem;
     justify-content: center;
     margin: auto;
-    padding-top: 6rem;
-    color: rgb(0, 0, 0);
+    padding-top: 4rem;
+    color: rgba(93, 194, 194, 0.527);
     transition: all 0.6s ease-in;
-    text-shadow: 3px 3px 1px rgb(168, 168, 168);
+    /* text-shadow: 3px 3px 1px rgb(168, 168, 168); */
 }
 
 .main #front {
@@ -148,10 +148,10 @@ a{
 }
 .direction h3 {
     margin: auto;
-    padding-top: 20%;
     color: var(--text-color);
     font-size: 1.6rem;
     opacity: 0.7;
+    padding-top: 5vh;
 }
 
 .direction .expand {
@@ -180,9 +180,9 @@ a{
 .content .heading {
     margin: auto;
     font-size: 7rem;
-    padding-top: 3rem;
-    color:#000;
-    text-shadow: 3px 3px 1px rgb(168, 168, 168);
+    padding-top: 1rem;
+    color: rgba(93, 194, 194, 0.527);
+    /* text-shadow: 3px 3px 1px rgb(168, 168, 168); */
 }
 
 .direction #about {
@@ -196,7 +196,7 @@ a{
 /*  */
 .container .carousel {
     margin: auto;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 .swiper-container {
     width: 80%;
@@ -205,8 +205,8 @@ a{
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 25rem;
-    height: 25rem;
+    width: 50vh;
+    height: 40vh;
     background-color: #fff;
     position: relative;
 }
@@ -225,33 +225,44 @@ a{
     display: grid;
     grid-template-areas:
     'head head'
-    'para1 image'
-    'para2 image';
+    'info image'
+    'info image';
     grid-template-columns: 1fr 1fr;
 }
 
 .heading {
     grid-area: head;
+    padding-bottom: 2rem;
 }
-#para1 {
-    grid-area: para1;
-}
-#para2 {
-    grid-area: para2;
-}
+
 #aboutImage {
     grid-area: image;
 }
 
-#para1, #para2 {
-    width: 100%;
-    line-height: 2rem;
-    padding: 1rem;
-    margin-top: 2rem;
-    text-align: justify;
-    letter-spacing: 0.02rem;
+#flex-dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
+.about-info {
+    grid-area: info;
+    text-align: left;
+    padding:1rem;
+    background-color: rgba(63, 63, 63, 0.075);
+    border-radius: 10px 0 0 10px;
+}
+.about-info h2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+.about-info ul{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.about img {
+    max-width: 60vh;
+    border-radius: 0 10px 10px 0;
+}
 
 /*  */
 /* box animations */
@@ -275,7 +286,7 @@ a{
     list-style: none;
     width: 25px;
     height: 25px;
-    background: rgb(24, 201, 255);
+    background: rgba(93, 194, 194);
     animation: animate 20s linear infinite;
     bottom: -150px;
 }
@@ -351,7 +362,7 @@ a{
     list-style: none;
     width: 25px;
     height: 25px;
-    background: rgb(255, 109, 24);
+    background: rgba(93, 194, 194);
     animation: animate 20s linear infinite;
     bottom: -150px;
 }
@@ -389,6 +400,70 @@ a{
     animation-delay: 0s;
 }
 
+/* box animation about page */
+.animation-area-about {
+    width: 100%;
+    height: 100vh;
+}
+.about-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index:-1;
+}
+.about-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background:  rgb(93, 194, 194);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+.about-area li:nth-child(1){
+    left: 92%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 1.5s;
+}
+
+.about-area li:nth-child(2){
+    left: 86%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.about-area li:nth-child(3){
+    left: 82%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 5.5s;
+}
+.about-area li:nth-child(4){
+    left: 2%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.about-area li:nth-child(5){
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+}
+.about-area li:nth-child(6){
+    left: 5%;
+    width: 140px;
+    height: 140px;
+    animation-delay: 5s;
+}
+
 /* keyframes */
 
 @keyframes fadeUp {
@@ -415,6 +490,29 @@ a{
     }
 }
 
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+@keyframes fadeLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 .m-scene .scene_element {
 animation-duration: 0.5s;
 transition-timing-function: ease-in;
@@ -425,6 +523,14 @@ animation-name: fadeUp;
 }
 .m-scene .scene_element--fadedown {
 animation-name: fadeDown;
+}
+.m-scene .scene_element--faderight {
+    animation-name: fadeRight;
+    animation-delay: 0.2s;
+}
+.m-scene .scene_element--fadeleft {
+    animation-name: fadeLeft;
+    animation-delay: 0.2s;
 }
 
 .m-scene.is-exiting .scene-element {
