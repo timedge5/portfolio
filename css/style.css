@@ -34,7 +34,91 @@ a{
     color: var(--text-color);
 }
 
-/* nav */
+/* drop down nav */
+/* .menu {
+    height: 100vh;
+    background-color: black;
+    opacity: 0.975;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in;
+}
+.menu.show {
+    transform: translateY(0);
+}
+.nav-list {
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 2em;
+    padding: 10px;
+    border-radius: 2px;
+    color: #c5c6c7;
+  }
+
+  .nav-link:hover {
+    background-color: #c5c6c7;
+    color: #000;
+  }
+/* menu btn */
+/* .menu-btn {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    color: #000;
+    font-size: 4em;
+    line-height: 150%;
+    opacity: 0.8;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.3s ease-in;
+}
+.menu-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.menu-btn.hide {
+    visibility: hidden;
+}
+/* close button */
+/* .close-btn {
+    position: absolute;
+    right: 10%;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 150%;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 3;
+    visibility: hidden;
+    transform: rotate(-360deg);
+    transition: 0.3s ease-in;
+}
+.close-btn:hover {
+    cursor: pointer;
+}
+.close-btn.show {
+    visibility: visible;
+    transform: rotate(360deg);
+} */ 
+
+/* normal nav */
 .navbar {
     width: 100%;
     font-size: 1.2rem;
@@ -126,14 +210,14 @@ a{
     grid-area: social;
     margin: auto;
     margin-top: 4rem;
-    padding: 0.9rem;
-    width: 100%;
+    padding: 1.2rem;
     background-color: rgba(97, 97, 97, 0.582);
     border-radius: 10px;
 }
 
 .main .social img {
     height: 60px;
+    margin: 0.2rem;
     filter: invert(100%);
 }
 
@@ -397,6 +481,10 @@ a{
 }
 .form-con textarea {
     grid-area: in4;
+}
+
+.form-con #left, .form-con #right {
+    border-radius: 10px;
 }
 
 .contact-form input::placeholder {
@@ -714,4 +802,264 @@ animation-name: fadeDown;
 
 .m-scene.is-exiting .scene-element {
     animation-direction: alternate-reverse;
+}
+
+
+
+
+/*  */
+/* media queries */
+/*  */
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) and (max-width: 479px) {
+    /* index */
+    .navbar .brand {
+        font-size: 1rem;
+    }
+    .main #intro {
+        font-size: 3rem;
+    }    
+    .main .social img {
+        height: 50px;
+        margin: 0.2rem;
+    }
+    .main .container {
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'intro'
+        'front'
+        'code'
+        'add'
+        'social';
+    }
+    .main #front {
+        margin-right: auto;
+    }
+     .main #add {
+        margin-left: auto;
+    }
+    .direction {
+        display: none;
+    }
+
+    /* portfolio */
+    .swiper-slide {
+        width: 30vh;
+        height: 30vh;
+    }
+    .content .heading {
+        font-size: 2.5rem;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .direction #about {
+        padding-top: 8rem;
+    }
+
+    /* about */
+    .about .container {
+        grid-template-areas:
+        'head head'
+        'info info'
+        'image image';
+    }
+    .about img {
+        display: none;
+    }
+    #flex-dev {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-info h2 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+    .about-info ul{
+        font-size: 1rem;
+    }
+    /* modal */
+    .modal-content {
+        max-width: 90%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+    .modal-header {
+        font-size: 1.6rem;
+    }
+    .modal-header p {
+        font-size: 0.6em;
+    }
+    .contact-form {
+        width: 80%;
+    }
+    .form-con {
+        display: grid;
+        grid-template-areas:
+        'in1'
+        'in2'
+        'in3'
+        'in4'
+        'sub';
+    }
+    .form-con input, .form-con textarea {
+        width: 100%;
+    }
+    .form-con input:nth-of-type(2) {
+        border-radius: 10px;
+    }
+    .form-con input:nth-of-type(3) {
+        border-radius: 10px;
+    }
+}
+
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /* nav */
+    .navbar .nav {
+        display: none;
+    }
+    /* index */
+    .main #intro {
+        font-size: 5rem;
+    }    
+    .main .social img {
+        height: 60px;
+    }
+    .main .container {
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'intro'
+        'front'
+        'code'
+        'add'
+        'social';
+    }
+    .main #front {
+        margin-right: auto;
+    }
+     .main #add {
+        margin-left: auto;
+    }
+
+    /* portfolio */
+    .swiper-slide {
+        width: 30vh;
+        height: 30vh;
+    }
+    .content .heading {
+        font-size: 3rem;
+        padding-top: 3rem;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-button-prev {
+        display: none;
+    }
+    .direction #about {
+        padding-top: 8rem;
+    }
+
+    /* about */
+    .about .container {
+        grid-template-areas:
+        'head head'
+        'info info'
+        'image image';
+    }
+    .about img {
+        display: none;
+    }
+    #flex-dev {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* modal */
+    .modal-content {
+        max-width: 90%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+    .modal-header {
+        font-size: 1.6rem;
+    }
+    .modal-header p {
+        font-size: 0.6em;
+    }
+    .contact-form {
+        width: 80%;
+    }
+    .form-con {
+        display: grid;
+        grid-template-areas:
+        'in1'
+        'in2'
+        'in3'
+        'in4'
+        'sub';
+    }
+    .form-con input:nth-of-type(2) {
+        border-radius: 10px;
+    }
+    .form-con input:nth-of-type(3) {
+        border-radius: 10px;
+    }
+
+}
+
+/* TABLETS PORTRAIT and half desktop */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* index */
+    .main #intro {
+        font-size: 9rem;
+    }    
+    .main .social img {
+        height: 60px;
+    }
+    .main .container {
+        display: grid;
+        grid-template-columns: 1.75fr 2fr 1.75fr;
+    }
+
+    /* portfolio */
+    .swiper-slide {
+        width: 40vh;
+        height: 30vh;
+    }
+    .content .heading {
+        font-size: 5rem;
+    }
+
+    /* about */
+    .about .container {
+        grid-template-areas:
+        'head head'
+        'info info'
+        'image image';
+    }
+    .about img {
+        display: none;
+    }
+    #flex-dev {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* modal */
+    .modal-content {
+        max-width: 90%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+
+
 }
