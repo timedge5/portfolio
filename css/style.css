@@ -364,8 +364,7 @@ a{
     'in1 in2'
     'in3 in3'
     'in4 in4'
-    'recap recap'
-    'sub sub';
+    'recap sub';
 }
 .contact-form input, .contact-form textarea {
     border-radius: 10px;
