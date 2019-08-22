@@ -364,7 +364,7 @@ a{
     'in1 in2'
     'in3 in3'
     'in4 in4'
-    'recap sub';
+    'sub sub';
 }
 .contact-form input, .contact-form textarea {
     border-radius: 10px;
@@ -393,11 +393,6 @@ a{
     grid-area: in4;
 }
 
-#recap {
-    grid-area: recap;
-    margin-bottom: 2rem;
-}
-
 .contact-form input::placeholder {
     text-transform: uppercase;
     font-family: 'Montserrat', Tahoma, sans-serif;
@@ -411,6 +406,7 @@ a{
     grid-area: sub;
     width: 50%;
     margin: auto;
+    margin-bottom: 1.2rem;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 1rem;
