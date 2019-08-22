@@ -364,6 +364,7 @@ a{
     'in1 in2'
     'in3 in3'
     'in4 in4'
+    'recap recap'
     'sub sub';
 }
 .contact-form input, .contact-form textarea {
@@ -378,19 +379,23 @@ a{
     background-color: rgba(207, 207, 207, 0.808);
     color:#000;
 }
-.form-con input:nth-of-type(1) {
+.form-con input:nth-of-type(2) {
     grid-area: in1;
     border-radius: 10px 0 0 10px;
 }
-.form-con input:nth-of-type(2) {
+.form-con input:nth-of-type(3) {
     grid-area: in2;
     border-radius: 0 10px 10px 0;
 }
-.form-con input:nth-of-type(3) {
+.form-con input:nth-of-type(4) {
     grid-area: in3;
 }
 .form-con textarea {
     grid-area: in4;
+}
+
+#recap {
+    grid-area: recap;
 }
 
 .contact-form input::placeholder {
