@@ -364,14 +364,9 @@ a{
     'in1 in2'
     'in3 in3'
     'in4 in4'
-    'recap recap'
     'sub sub';
 }
-#recap {
-    grid-area: recap;
-}
 .contact-form input, .contact-form textarea {
-    width: 100%;
     border-radius: 10px;
     resize: none;
     margin-bottom: 1.2rem;
