@@ -152,7 +152,7 @@ a{
     color: var(--text-color);
     font-size: 1.6rem;
     opacity: 0.7;
-    padding-top: 20%;
+    padding-top: 15%;
 }
 
 .direction .expand {
@@ -187,8 +187,14 @@ a{
 }
 
 .direction #about {
-    padding-top: 2rem;
+    padding-top: 4rem;
 }
+
+
+.direction #contact {
+    padding-top: 6rem;
+}
+
 
 
 
@@ -326,7 +332,7 @@ a{
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
-    transform: translateX(-100%);
+    transform: translateY(100%);
     transition: all 0.01s ease-in-out;
 
 }
@@ -339,7 +345,7 @@ a{
     max-width: 800px;
     border-radius: 0.8rem;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
-    transform: translateX(-100%);
+    transform: translateY(100%);
     transition: all 0.2s ease-in-out;
 }
 

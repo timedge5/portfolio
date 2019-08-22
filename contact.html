@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type=text/css />
+    <title>tim|edge|portfolio</title>
+</head>
+<body>
+    <div class="landing m-scene" id='portfolioPage'>
+        <!-- nav -->
+        <nav class="navbar scene_element scene_element--fadeup">
+            <div class="container">
+                <div class="brand">tim|edge</div>
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                    <li class="nav-item"><a class="nav-link" id='conform'>contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="content scene_element scene_element--fadeup">
+            <div class="container">
+                <h1 class='heading'>CONTACT</h1>
+                <div class="contact-form">
+                    <form data-netlify='true' class="form-con" method="POST" name="contactform" onsubmit="return validateForm()">
+                        <input type="text" name="firstname" required="required" placeholder="First name"> <br>
+                        <input type="text" name="lastname" required="required" placeholder="Last name"> <br>
+                        <input type="email" name="email" required="required" placeholder="Email"> <br>
+                        <textarea name="message" id="" cols="30" rows="10" maxlength="300" placeholder="Include a quick overview of your project, timeline, and goals."></textarea> <br>
+                        <!-- <div data-netlify-recaptcha='true' id='recap'></div> -->
+                        <input type="submit" value="submit" id="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="animation-area-port">
+        <ul class="port-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <p>&copy;Tim Edge 2019. ALL RIGHTS RESERVED</p>
+    </footer>
+
+    <script src='js/jquery-3.4.1.min.js'></script>
+    <script src='js/jquery.smoothState.min.js'></script>
+    <script src='js/pageTransition.js'></script>
+    <script src='js/modal.js'></script>
+</body>
+</html>
