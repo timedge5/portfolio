@@ -395,6 +395,7 @@ a{
 
 #recap {
     grid-area: recap;
+    margin-bottom: 2rem;
 }
 
 .contact-form input::placeholder {
