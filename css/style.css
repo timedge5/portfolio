@@ -217,12 +217,12 @@ a{
     background-size: cover;
     width: 50vh;
     height: 40vh;
-    background-color: rgba(235, 235, 235, 0.753);
+    background-color: rgba(141, 141, 141, 0.753);
     border: 1px solid #cecece;
     position: relative;
 }
 .swiper-slide .card-content {
-    color: #000;
+    color: rgb(255, 255, 255);
     position: absolute;
     text-transform: uppercase;
     top: 50%;
