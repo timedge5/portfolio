@@ -889,6 +889,9 @@ animation-name: fadeDown;
         width: 30vh;
         height: 30vh;
     }
+    .swiper-btn {
+        font-size: 0.8em;
+    }
     .content .heading {
         font-size: 2.5rem;
         padding-top: 2rem;
@@ -1042,6 +1045,9 @@ animation-name: fadeDown;
     .content .heading {
         font-size: 3rem;
         padding-top: 3rem;
+    }
+    .swiper-btn {
+        font-size: 0.8em;
     }
     .swiper-button-next {
         display: none;
