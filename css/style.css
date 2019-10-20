@@ -221,8 +221,15 @@ a{
     border: 1px solid #cecece;
     position: relative;
 }
+
+.swiper-slide:nth-child(1) {
+    background-image: url('../img/13background.png');
+}
+.swiper-slide:nth-child(2) {
+    background-image: url('../img/weatherbackground.png');
+}
 .swiper-slide .card-content {
-    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 1);
     position: absolute;
     text-transform: uppercase;
     top: 50%;
