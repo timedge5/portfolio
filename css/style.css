@@ -213,8 +213,9 @@ a{
     padding-bottom: 3rem;
 }
 .swiper-slide {
-    background-position: center;
+    background-position: top left;
     background-size: cover;
+    background-repeat: no-repeat;
     width: 50vh;
     height: 40vh;
     background-color: rgba(141, 141, 141, 0.753);
@@ -229,7 +230,8 @@ a{
     background-image: url('../img/weatherbackground.png');
 }
 .swiper-slide .card-content {
-    color: rgba(0, 0, 0, 1);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px white;
     position: absolute;
     text-transform: uppercase;
     top: 50%;
@@ -249,12 +251,13 @@ a{
 }
 .swiper-btn {
     text-decoration: none;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     padding: 1rem;
     border-radius: 5px;
 }
 .swiper-btn:hover {
-    background-color: #000;
+    background-color: rgb(107, 107, 107);
     color: #fff;
 }
 .swiper-button-next {
