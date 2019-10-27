@@ -223,11 +223,17 @@ a{
     position: relative;
 }
 
-.swiper-slide:nth-child(1) {
+.swiper-slide:nth-child(2) {
     background-image: url('../img/13background.png');
 }
-.swiper-slide:nth-child(2) {
+.swiper-slide:nth-child(3) {
     background-image: url('../img/weatherbackground.png');
+}
+.swiper-slide:nth-child(4) {
+    background-image: url('../img/lightbox.png');
+}
+.swiper-slide:nth-child(1) {
+    background-image: url('../img/denali.png');
 }
 .swiper-slide .card-content {
     color: rgb(0, 0, 0);
